@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BookApp</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="mycontroller.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<button id="btnNew">New Book</button></br></br>
+		</div>
+		<div id="mainArea">
+			<form id="bookForm">
+			<fieldset>
+					<table>	
+						<tr>
+						<td>
+							<label>Isbn:</label>
+						</td>
+							<td>
+								<input type="text" id="isbn" name="isbn" size="13" required />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Title:</label>
+							</td>
+							<td>
+								<input type="text" id="title" name="title" size="100" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Author:</label>
+							</td>
+							<td>
+								<input type="text" id="author" name="author" size="100" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<button id="btnSave">Save</button>
+								<button id="btnUpdate">Update</button>
+							</td>
+							<td>
+								<button id="btnDelete">Delete</button>
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+			</form>
+		</div>
+		<div class="leftArea">
+			<ul id="bookList" name="bookList"></ul>
+		</div>
+	</body>
+</html>
